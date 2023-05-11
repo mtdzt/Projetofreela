@@ -16,35 +16,50 @@
     
 }
 header {
+    max-width: 100%;
+    
     list-style: none;
-    float: right;
-    padding-right: 40px;
-    font-family: 'montserrat';
-    font-weight: bold;
+    background-color: #18181a;
+    
+    font-weight: 500;
     font-size: 1.3em;
-    
-    
+    text-align: right;
+    height: 50px;
+    padding-right: 30px;
 }
 li {
     position: relative;
     display: inline-block;
-    padding-left: 30px;
+    padding-bottom: 11px;
+    padding-top: 12px;
+    
+    transition: .5s;
+    
+    
+}
+li:hover {
+    transform: scale(1.1);
+    background-color: black;
 }
 li a {
-    color: white;
+    color: rgb(255, 255, 255);
+    padding-right: 30px;
 }
 li ul {
     position: absolute;
     display: none;
-    
+    padding: 0px;
 }
 li:hover ul, li.over ul {
     display: block;
-    
-    
+    list-style-type: none;
+    text-align: left;
+    background: #18181a;
+    padding-top: 10px;
 }
 a {
     text-decoration: none;
+    
 }
 div#primeirapag {
     height: 100vh;
@@ -56,7 +71,7 @@ div#primeirapag {
 }
 div#primeirapag h1 {
     color: white;
-    padding-top: 200px;
+    padding-top: 190px;
     padding-left: 75px;
     font-size: 50px ;
     display: inline-block;
